@@ -1,0 +1,36 @@
+#box1{
+    width:250px;
+    height:250px;
+    background:red;
+    font-size:225px;
+    text-align: center;
+
+
+   /* animation: mySlide;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 5s ; 
+    animation-delay:0s;
+    animation-timing-function: linear;
+    */
+
+    animation: 5s linear 0s infinite running myRotate;
+
+}
+
+    @keyframes mySlide{
+        from{margin-left: 0%;} 
+        to{margin-left: 100%;}
+    }
+     
+@keyframes myRotate{
+    50% {opacity: 0;}
+    50%{transform: scale(0.5,0.5);}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+
+}
+    
